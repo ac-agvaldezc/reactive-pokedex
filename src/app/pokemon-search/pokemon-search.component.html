@@ -1,0 +1,13 @@
+<div>
+  <p>Pokemon Search Component</p>
+  <div>
+    <input type='number' placeholder='# de pokemon' [(ngModel)]='pokemonId'>
+    <button (click)='searchPokemon()'>Buscar pokemon</button>
+  </div>
+  <div>
+    <ul *ngIf='searchedPokemon'>
+      <li><img [src]='searchedPokemonImage'></li>
+      <li>{{searchedPokemon.name}}</li>
+    </ul>
+  </div>
+</div>

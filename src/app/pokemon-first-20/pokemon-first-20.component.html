@@ -1,0 +1,10 @@
+<div>
+  <p>Pokemon Get Component</p>
+  <div>
+    <button (click)='getPokemons()'>Primeros 20 pokemons</button>
+    <p *ngIf='errorMessage'>{{errorMessage}}</p>
+    <ul *ngIf='pokemons'>
+      <li *ngFor='let pokemon of pokemons'>{{pokemon.name}}</li>
+    </ul>
+  </div>
+</div>
